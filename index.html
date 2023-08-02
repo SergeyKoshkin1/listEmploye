@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="root">
+        <h2 class="h2 flex">Список сотрудников</h2>
+        <div class="employe__add">
+            <h3 class="employe__title">Добавление нового сотрудника</h3>
+            <div class="container-input"><input type="text" class="input" id="employe__name" placeholder="Имя"> </div>
+            <div class="container-input"><input type="text" class="input" id="employe__surname" placeholder="Фамилия"> </div>
+            <div class="container-input"><input type="text" class="input" id="employe__midlename" placeholder="Отчество"> </div>
+            <div class="container-input"><input type="date" class="input" id="employe__birthday" placeholder="Дата рождения"> </div>
+            <button class="btn btn-add" id="btn-add" >Добавить</button>
+        </div>
+        <div class="list__container">
+            <ul class="list__employe" id="item-list"></ul>
+        </div>
+        <div class="modal-background" id="modalAproved">
+            <div class="modal">
+              <div>
+                <h5 class="title"></h5>
+                <div class="container-button">
+                    <button class="btn btn-modal btn1"></button>
+                    <button class="btn btn-modal btn2"></button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-background" id="modalInfo">
+            <div class="modal modal-info">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
